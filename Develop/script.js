@@ -69,7 +69,12 @@ function generatePassword() {
     pool = pool.concat(allSpChar)
   }
 
+  //creat a forloop to iterate through (desiredLength)
+  // console.log(pool[8])
+  //code within the forloop will choose random possition from pool
+    
   return pool
+
   console.log(pool)
 
   //Math.floor and Math.random ?? (study)
