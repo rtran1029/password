@@ -69,14 +69,25 @@ function generatePassword() {
     pool = pool.concat(allSpChar)
   }
 
+  var pickNumber = Math.floor (desiredLength)
   //creat a forloop to iterate through (desiredLength)
   // console.log(pool[8])
   //code within the forloop will choose random possition from pool
-    
-  return pool
-
+  console.log(pickNumber)
   console.log(pool)
+  // var fixedPickNumber = pickNumber -1
+  var poolLength = pool.length
+  console.log(poolLength)
+  var newPassword = ""
+  for (var i = 0; i < pickNumber; i++) {
+    var randomNumber = Math.floor(Math.random() * poolLength);
+    newPassword += pool.substring(randomNumber, randomNumber +1);
+  }
 
+  
+
+
+  return newPassword
   //Math.floor and Math.random ?? (study)
   //math floor rounds down returns whole number intergers
   //math random returns a random number 0-1 but never 1
