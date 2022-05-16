@@ -73,11 +73,11 @@ function generatePassword() {
   //creat a forloop to iterate through (desiredLength)
   // console.log(pool[8])
   //code within the forloop will choose random possition from pool
-  console.log(pickNumber)
-  console.log(pool)
+  // console.log(pickNumber)
+  // console.log(pool)
   // var fixedPickNumber = pickNumber -1
   var poolLength = pool.length
-  console.log(poolLength)
+  // console.log(poolLength)
   var newPassword = ""
   for (var i = 0; i < pickNumber; i++) {
     var randomNumber = Math.floor(Math.random() * poolLength);
